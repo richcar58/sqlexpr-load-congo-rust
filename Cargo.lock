@@ -258,13 +258,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
 
 [[package]]
-name = "parser"
-version = "1.0.0"
-dependencies = [
- "serde",
-]
-
-[[package]]
 name = "proc-macro2"
 version = "1.0.106"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -338,15 +331,24 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0fda2ff0d084019ba4d7c6f371c95d8fd75ce3524c3cb8fb653a3023f6323e64"
 
 [[package]]
+name = "sqlexpr-congo-rust"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e0670d5dd78d06c9190a4b9b8af341dd00f0da4eee0591361f9bdd044aeec0b1"
+dependencies = [
+ "serde",
+]
+
+[[package]]
 name = "sqlexpr-load-congo-rust"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
  "anyhow",
  "chrono",
  "clap",
- "parser",
  "serde",
  "serde_json",
+ "sqlexpr-congo-rust",
  "thiserror",
 ]
 
